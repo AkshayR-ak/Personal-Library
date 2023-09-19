@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Book Library</title>
+</head>
+
+<body>
+    <h1>My Book Library</h1>
+    <form id="addBookForm">
+        <label for="title">Title: </label><br>
+        <input type="text" id="title" required><br>
+        <label for="author">Author:</label><br>
+        <input type="text" id="author" required><br>
+        <label for="year">Year Published:</label><br>
+        <input type="number" id="year" required><br>
+        <label for="readStatus">Read Status:</label><br>
+        <select id="readStatus">
+            <option value="read">Read</option>
+            <option value="unread">Unread</option>
+        </select><br><br>
+        <button type="submit">Add Book</button>
+    </form>
+
+    <br>
+    <button id="removeButton">Remove Last Book</button>
+
+    <h2>My Library</h2>
+    <ul id="libraryList"></ul>
+
+    <form id="searchForm">
+        <label for="searchAuthor">Search by Author:</label>
+        <input type="text" id="searchAuthor">
+        <button type="submit">Search</button>
+    </form>
+
+    <h2>Search Results</h2>
+    <ul id="searchResults"></ul>
+
+</body>
+<script src="index.js"></script>
+
+</html>
